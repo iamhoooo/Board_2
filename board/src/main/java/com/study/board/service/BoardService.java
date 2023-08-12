@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.UUID;
 
-@Service
+@Service. 
 public class BoardService {
 
     // 글 작성 처리
