@@ -109,10 +109,10 @@ public class BoardController {
             boardService.update(boardTemp);
         }
 
-        model.addAttribute("message", "글이 수정 되었습니다.");
-        model.addAttribute("searchUrl", "/board/list");
+        model.addAttribute("message", "글이 수정 되었습니다.");     
+        model.addAttribute("searchUrl", "/board/list");  
 
-        return "message";
+        return "message";   
     }
 
 //    @PostMapping("/board/update/{id}")
