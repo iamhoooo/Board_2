@@ -45,7 +45,7 @@ public class BoardController {
                             @PageableDefault(page = 0, size = 10, sort = "id", direction = Sort.Direction.DESC) Pageable pageable,
                             String searchKeyword) {
 
-        Page<Board> list = null;
+        Page<Board> list = null;   
 
         if(searchKeyword == null){
             list = boardService.boardList(pageable);
