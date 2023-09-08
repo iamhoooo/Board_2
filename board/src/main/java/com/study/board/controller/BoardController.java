@@ -34,10 +34,10 @@ public class BoardController {
         boardService.write(board, file);
 
         model.addAttribute("message", "글 작성이 완료 되었습니다.");
-//        model.addAttribute("message", "글 작성이 실패했습니다..");
-        model.addAttribute("searchUrl", "/board/list");
+//        model.addAttribute("message", "글 작성이 실패했습니다..");  
+        model.addAttribute("searchUrl", "/board/list");   
 
-        return"message";
+        return"message";    
     }
 
     @GetMapping("/board/list")
