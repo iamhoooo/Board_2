@@ -31,8 +31,8 @@
                     <td>
                         <a th:text="${board.title}" th:href="@{/board/view(id=${board.id})}"></a>
                     </td>
-                </tr>
-            </tbody>
+                </tr>   
+            </tbody>   
         </table>
 
         <th:block th:each="page : ${#numbers.sequence(startPage, endPage)}">
@@ -42,7 +42,7 @@
         <form th:action="@{/board/list}" method = "get">
             <input type="text" name="searchKeyword">
             <button type="submit">검색</button>
-        </form>
+        </form>               
 
     </div>
 
