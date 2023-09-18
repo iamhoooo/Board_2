@@ -20,7 +20,7 @@ import java.io.IOException;
 public class BoardController {
 
     @Autowired
-    private BoardService boardService;
+    private BoardService boardService;                   
 
     @GetMapping("/board/write") //localhost:8080/board/write
     public String boardWriteFrom() {
